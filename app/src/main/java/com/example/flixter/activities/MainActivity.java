@@ -1,5 +1,6 @@
-package com.example.flixter;
+package com.example.flixter.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -9,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
+import com.example.flixter.R;
 import com.example.flixter.adapters.MovieAdapter;
 import com.example.flixter.models.Movie;
 
@@ -37,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
 
         rvMovies.setLayoutManager(new LinearLayoutManager(this));
 
+
+
         AsyncHttpClient client = new AsyncHttpClient();
         client.get(NOW_PLAYING_URL, new JsonHttpResponseHandler() {
             @Override
@@ -64,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 // called when response HTTP status is "4XX" (eg. 401, 403, 404)
                 Log.d("MainActivity", "onFailure");
             }
+
         });
 
 
