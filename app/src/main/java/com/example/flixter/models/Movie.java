@@ -16,6 +16,7 @@ public class Movie {
     String title;
     String backDropPath;
     double rating;
+    int key;
 
     public Movie(){}
 
@@ -26,6 +27,8 @@ public class Movie {
         title = jsonObject.getString("title");
         backDropPath = jsonObject.getString("backdrop_path");
         rating = jsonObject.getDouble("vote_average");
+        key = jsonObject.getInt("id");
+
 
     }
 
@@ -47,6 +50,10 @@ public class Movie {
 
     public String getBackDropPath(){
         return String.format("https://image.tmdb.org/t/p/w342/%s",backDropPath);
+    }
+
+    public int getKey(){
+        return key;
     }
 
     public double getRating(){
