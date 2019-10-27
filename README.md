@@ -4,13 +4,15 @@
 
 Submitted by: **Aaron Christson**
 
-Time spent: **2** hours spent in total
+Time spent: **5** hours spent in total
 
 ## User Stories
 
 The following **required** functionality is completed:
 
 * [x] User can view a list of movies (title, poster image, and overview) currently playing in theaters from the Movie Database API.
+* [x] Expose details of movie (ratings using RatingBar, popularity, and synopsis) in a separate activity. 
+* [x] Allow video posts to be played in full-screen using the YouTubePlayerView.
 
 The following **optional** features are implemented:
 
@@ -22,6 +24,6 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='FlixterApp.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='FlixterApp2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
