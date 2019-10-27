@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activities.DetailActivity">
+    tools:context=".activities.DetailActivity"
+    android:background="#21324d">
 
     <com.google.android.youtube.player.YouTubePlayerView
         android:id="@+id/player"
@@ -17,7 +19,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="30sp"
-        tools:text="Title" />
+        tools:text="Title"
+        android:textColor="#ffffff"/>
 
     <RatingBar
         android:id="@+id/ratingBar"
@@ -31,5 +34,6 @@
         android:id="@+id/tvOverview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="Overview" />
+        tools:text="Overview"
+        android:textColor="#ffffff"/>
 </LinearLayout>
